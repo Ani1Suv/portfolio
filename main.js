@@ -70,14 +70,53 @@ const renderProjectDetail = () => {
     detailContainer.innerHTML = `
         <a href="index.html" class="back-link">← Back to Home</a>
         <div class="project-header fade-in">
-            <h1>${project.title}</h1>
-            <div class="project-tags" style="margin-top: 0; margin-bottom: 2rem;">
-                ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+            <div class="project-header-info">
+                <h1 style="margin-bottom: 0.5rem;">${project.title}</h1>
+                <div class="project-tags" style="margin-top: 0;">
+                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
             </div>
+            ${project.link && project.link !== "#" ? `<a href="${project.link}" target="_blank" class="live-project-btn" style="margin-top: 0; white-space: nowrap;">View Live Project</a>` : ''}
         </div>
         <img src="${project.image}" alt="${project.title}" class="project-hero-img fade-in" style="animation-delay: 0.1s">
         <div class="project-content fade-in" style="animation-delay: 0.2s">
-            <p>${project.fullDescription}</p>
+            ${project.overview ? `
+                <div class="case-study-section">
+                    <h2>Overview</h2>
+                    <p style="color: var(--text-muted);">${project.overview}</p>
+                </div>
+            ` : (project.fullDescription ? `<p>${project.fullDescription}</p>` : '')}
+
+            ${project.whatIDid && project.whatIDid.length > 0 ? `
+                <div class="case-study-section">
+                    <h2>What I Did</h2>
+                    <ul class="case-study-list">
+                        ${project.whatIDid.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+            ` : ''}
+
+            ${project.visuals && project.visuals.length > 0 ? `
+                <div class="case-study-section">
+                    <h2>Visuals</h2>
+                    <div class="visuals-grid">
+                        ${project.visuals.map(visual => `
+                            <a href="${visual.link}" target="_blank" class="visual-item">
+                                <img src="${visual.img}" alt="${project.title} visual" class="project-visual-img" loading="lazy">
+                            </a>
+                        `).join('')}
+                    </div>
+                </div>
+            ` : ''}
+
+            ${project.tools && project.tools.length > 0 ? `
+                <div class="case-study-section">
+                    <h2>Tools & Technologies</h2>
+                    <div class="project-tags">
+                        ${project.tools.map(tool => `<span class="tag" style="font-size: 0.85rem; padding: 0.4rem 1rem;">${tool}</span>`).join('')}
+                    </div>
+                </div>
+            ` : ''}
         </div>
     `;
 };

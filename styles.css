@@ -247,6 +247,11 @@ p { margin-bottom: var(--space-md); }
 /* Project Detail Page */
 .project-header {
     margin-bottom: var(--space-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-md);
 }
 
 .project-hero-img {
@@ -275,6 +280,74 @@ p { margin-bottom: var(--space-md); }
 
 .back-link:hover {
     color: var(--accent-color);
+}
+
+/* Case Study Layout */
+.case-study-section {
+    margin-bottom: var(--space-xl);
+}
+
+.case-study-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+    color: var(--text-color);
+}
+
+.case-study-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.case-study-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: var(--space-sm);
+    color: var(--text-muted);
+}
+
+.case-study-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.visuals-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+    .visuals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.visual-item {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+    aspect-ratio: 16 / 9; /* optional, maintains a nice aspect ratio if needed, but not strictly necessary if images are consistent */
+}
+
+.visual-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .visual-item:hover {
+    box-shadow: 0 10px 25px rgba(123, 97, 255, 0.15);
+}
+
+.project-visual-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Contact Form */
@@ -314,7 +387,7 @@ input:focus, textarea:focus {
     box-shadow: 0 0 0 3px rgba(123, 97, 255, 0.15);
 }
 
-button {
+button, .live-project-btn {
     padding: 1rem 2rem;
     background-color: var(--accent-color);
     color: #fff;
@@ -324,15 +397,17 @@ button {
     cursor: pointer;
     transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
     align-self: flex-start;
+    display: inline-block;
+    margin-top: var(--space-md);
 }
 
-button:hover {
+button:hover, .live-project-btn:hover {
     background-color: var(--accent-hover);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(123, 97, 255, 0.3);
 }
 
-button:active {
+button:active, .live-project-btn:active {
     transform: translateY(0);
 }
 

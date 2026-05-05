@@ -3,43 +3,123 @@
 
 const portfolioData = {
     // Basic Information
-    name: "Anirudh",
+    name: "ANIVERSE",
     role: "Creative Developer & Designer",
-    tagline: "I build clean, minimalist, and engaging digital experiences.",
-    about: "I'm a passionate creator who loves turning complex problems into simple, beautiful, and intuitive designs. With a focus on user experience and micro-interactions, I strive to build products that feel alive.",
-    email: "hello@example.com",
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    tagline: "A website is your space on the internet. This is mine.",
+    about: "I design and build clean, functional digital experiences. My work combines design, structure, and problem-solving — from websites and content systems to branding and early-stage startup work. I started with no-code tools like Wix and gradually moved into using code and AI to extend what’s possible. Right now, I’m focused on creating work that feels simple, intentional, and genuinely useful.",
+    email: "anirudh1suvarna@gmail.com",
+    github: "https://github.com/Ani1Suv",
+    linkedin: "https://www.linkedin.com/in/anirudh-suvarna/",
 
     // Projects Array
     // To add a new project, simply copy one of the blocks below and change the details.
     projects: [
         {
             id: "project-1",
-            title: "Ethereal UI",
-            shortDescription: "A minimalist design system for modern web applications.",
-            fullDescription: "Ethereal UI is a comprehensive design system built from the ground up to prioritize whitespace, typography, and subtle interactions. The goal was to create a framework that feels weightless yet highly functional. It leverages deep purples to provide a premium feel on dark mode.",
-            image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
-            tags: ["UI/UX", "Design System", "CSS"],
-            link: "#"
+            title: "Mindstaq Website & Content System",
+            shortDescription: "Designed and built web pages and a structured content system, including a resource hub and custom PDF viewer.",
+            image: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/mindstaq.png",
+            tags: ["Web Design", "Wix", "UI/UX", "Content Systems"],
+            link: "https://www.mindstaq.com/work-management-for-every-role-v2",
+
+            // Case Study Details
+            overview: "Designed and developed multiple web pages for Mindstaq, focusing on clean layouts, structured content, and improved usability. The project included both landing pages and functional sections like a centralized resource hub for articles and blogs.",
+
+            whatIDid: [
+                "Designed and built landing pages tailored for different content and product use cases",
+                "Developed a centralized resource hub to organize and display articles and blogs",
+                "Structured layouts to improve readability, navigation, and user flow",
+                "Integrated a custom PDF viewer using GitHub to reduce reliance on third-party tools",
+                "Used light custom code (with AI assistance) to extend platform functionality",
+                "Designed whitepapers aligned with brand and content requirements"
+            ],
+
+            tools: ["Wix", "HTML/CSS", "GitHub", "Canva", "AI-assisted development"],
+
+            visuals: [
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/whitepaper.png",
+                    link: "https://www.mindstaq.com/smarter-way-to-manage-projects"
+                },
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/PDF%20viewer.png",
+                    link: "https://www.mindstaq.com/whitepaper-scorecards"
+                },
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/resources.png",
+                    link: "https://www.mindstaq.com/resources-v2"
+                },
+            ]
         },
         {
             id: "project-2",
-            title: "Nimbus Analytics",
-            shortDescription: "A clean, dark-themed dashboard for visualizing complex data.",
-            fullDescription: "Nimbus Analytics helps businesses understand their data through a beautifully crafted, distraction-free interface. We used deep purples and dark blues to create a premium feel while keeping the data the star of the show. The micro-animations guide the user's eye exactly where it needs to be.",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-            tags: ["Dashboard", "Data Viz", "Web App"],
-            link: "#"
+            title: "Belorganic Naturprodukte Website",
+            shortDescription: "Designed and built a clean, product-focused website for an Austrian B2B functional drinks brand.",
+
+            image: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/Belorganic%20main.png",
+
+            tags: ["Web Design", "Wix", "UI/UX"],
+
+            link: "https://jimbolaya90.wixstudio.com/belorganic?rc=test-site",
+
+            // Case Study Details
+            overview: "Designed and developed a full website for Belorganic Naturprodukte, an Austrian B2B functional drinks company. The focus was on creating a clean, product-driven layout that clearly communicates brand identity and product information.",
+
+            whatIDid: [
+                "Designed and built the complete website from scratch based on client requirements",
+                "Structured pages to highlight products and brand positioning effectively",
+                "Created clean, minimal layouts to improve readability and user experience",
+                "Worked closely with client inputs to align design with brand direction",
+                "Developed product pages with clear information hierarchy and visual focus"
+            ],
+
+            tools: ["Wix", "UI/UX Design"],
+
+            visuals: [
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/belorganic%20product%20page.png",
+                    link: "https://jimbolaya90.wixstudio.com/belorganic/products/birch-water?rc=test-site"
+                }
+            ]
         },
         {
             id: "project-3",
-            title: "Aura Mobile",
-            shortDescription: "An interactive prototype for a wellness and meditation app.",
-            fullDescription: "Aura Mobile focuses on bringing a sense of calm to the user. Through careful use of micro-animations and soft color palettes, the app guides users through their daily meditation routines with zero friction.",
-            image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&q=80",
-            tags: ["Mobile", "Prototyping", "Wellness"],
-            link: "#"
+            title: "Sai Meethya (Zuno Foods) Branding & Website",
+            shortDescription: "Worked on early-stage branding, packaging, and website creation for a food startup.",
+
+            image: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/zunofoods.png",
+
+            tags: ["Branding", "Packaging Design", "Web Design", "Startup"],
+
+            link: "https://www.zunofoods.com/",
+
+            // Case Study Details
+            overview: "Contributed to the early-stage development of Sai Meethya (Zuno Foods), working as part of a small team on branding, packaging, and digital presence. The focus was on creating visually appealing product packaging and supporting materials to establish a strong brand identity.",
+
+            whatIDid: [
+                "Designed initial product packaging for food products",
+                "Created marketing materials including brochures and banners",
+                "Built the company website to establish an online presence",
+                "Collaborated in a small team to execute multiple aspects of the startup",
+                "Assisted in product presentation and sales at stalls/events"
+            ],
+
+            tools: ["Canva", "Wix", "Graphic Design", "Branding"],
+
+            visuals: [
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/zunofoods.png",
+                    link: "https://www.zunofoods.com/"
+                },
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/New%20packaging.png",
+                    link: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/New%20packaging.png"
+                },
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/Product%201.png",
+                    link: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/Product%201.png"
+                }
+            ]
         }
     ]
 };
