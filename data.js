@@ -120,6 +120,41 @@ const portfolioData = {
                     link: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/Product%201.png"
                 }
             ]
+        },
+        {
+            id: "project-4",
+            title: "SSSIHL PSN Campus Hostel Website",
+            shortDescription: "Led the design and development of a structured website for a university hostel system.",
+
+            image: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/ssshsb.png",
+
+            tags: ["Web Design", "Leadership", "UI/UX", "Content Systems"],
+
+            link: "https://www.ssshsb.com/",
+
+            // Case Study Details
+            overview: "Led a small team to design and build the official website for the SSSIHL PSN campus hostel system. The project focused on organizing information from multiple departments into a clear, accessible structure for students and administrators.",
+
+            whatIDid: [
+                "Led a 3-member team to plan, design, and build the website",
+                "Coordinated with multiple hostel departments to collect and structure content",
+                "Designed a clean and intuitive layout for easy navigation",
+                "Organized complex information into a structured and user-friendly system",
+                "Oversaw content creation and implementation across different sections"
+            ],
+
+            tools: ["Wix", "UI/UX Design", "Content Structuring", "Team Collaboration"],
+
+            visuals: [
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/ssshsb.png",
+                    link: "https://www.ssshsb.com/"
+                },
+                {
+                    img: "https://raw.githubusercontent.com/Ani1Suv/portfolio/main/images/departments.png",
+                    link: "https://www.ssshsb.com/"
+                }
+            ]
         }
     ]
 };
