@@ -23,7 +23,7 @@ const portfolioData = {
             link: "https://www.mindstaq.com/work-management-for-every-role-v2",
 
             // Case Study Details
-            overview: "Designed and developed multiple web pages for Mindstaq, focusing on clean layouts, structured content, and improved usability. The project included both landing pages and functional sections like a centralized resource hub for articles and blogs.",
+            overview: "Designed and developed multiple web pages for Mindstaq, a US-based company, focusing on clean layouts, structured content, and improved usability. The project included both landing pages and functional sections like a centralized resource hub for articles and blogs.",
 
             whatIDid: [
                 "Designed and built landing pages tailored for different content and product use cases",
