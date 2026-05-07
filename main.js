@@ -136,6 +136,38 @@ const populateData = () => {
     }
 };
 
+// Mobile Menu Logic
+const initMobileMenu = () => {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const navLinks = document.getElementById('nav-links');
+    const menuOverlay = document.getElementById('menu-overlay');
+
+    if (!mobileBtn || !navLinks) return;
+
+    const toggleMenu = () => {
+        mobileBtn.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        if (menuOverlay) menuOverlay.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    };
+
+    mobileBtn.addEventListener('click', toggleMenu);
+    
+    if (menuOverlay) {
+        menuOverlay.addEventListener('click', toggleMenu);
+    }
+
+    // Close menu when clicking on a link
+    const links = navLinks.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    });
+};
+
 // Handle Contact Form Submit
 const initForm = () => {
     const form = document.getElementById('contact-form');
@@ -170,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     populateData();
     renderProjects();
     renderProjectDetail();
+    initMobileMenu();
     initForm();
 
     // Smooth page transitions for internal links
